@@ -6,6 +6,7 @@ import { useAuth, useNotification } from "../../hooks";
 /* eslint-disable react/prop-types */
 function SidebarMainPage() {
   const { authInfo } = useAuth();
+  console.log(authInfo)
 
   const fileInput = useRef();
 
@@ -88,10 +89,9 @@ function SidebarMainPage() {
                       <div className="main-page feed-identity-widget-item__icon-stat t-12 t-black t-bold flex-1">
                         <span className="main-page feed-identity-widget-item__stat">
                           <strong>
-                            {/* {authInfo.profile?.connections?.length !== 0
+                            {authInfo.profile?.connections?.length !== 0
                               ? authInfo.profile?.connections?.length
-                              : 0} */}
-                            0
+                              : 0}
                           </strong>
                         </span>
                       </div>

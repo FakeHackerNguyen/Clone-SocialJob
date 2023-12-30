@@ -20,7 +20,7 @@ exports.isAuth = async (req, res, next) => {
     .populate("initialEducation")
     .populate("initialExperience")
     .populate("educations")
-    .populate("experiences");
+    .populate("experiences")
   if (!user) return sendError(res, "unauthorized access!");
 
   user = await University.populate(user, {

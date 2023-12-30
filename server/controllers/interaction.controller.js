@@ -6,6 +6,10 @@ const Comment = require("../models/comment.model");
 const React = require("../models/react.model");
 const Reply = require("../models/reply.model");
 const User = require("../models/user.model");
+const Education = require("../models/education.model");
+const Experience = require("../models/experience.model");
+const Company = require("../models/company.model");
+const University = require("../models/university.model");
 
 exports.commentPost = async (req, res) => {
   const { postId, content } = req.body;
@@ -116,6 +120,22 @@ exports.getComments = async (req, res) => {
   let comments = await Comment.find({
     post: postId,
   }).populate("owner", "-password");
+
+  comments = await Education.populate(comments, {
+    path: "owner.initialEducation",
+  });
+
+  comments = await Experience.populate(comments, {
+    path: "owner.initialExperience",
+  });
+
+  comments = await Company.populate(comments, {
+    path: "owner.initialExperience.company",
+  });
+
+  comments = await University.populate(comments, {
+    path: "owner.initialEducation.university",
+  });
 
   res.json({ comments });
 };

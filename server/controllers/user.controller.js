@@ -77,14 +77,13 @@ exports.create = async (req, res) => {
   console.log("OTP: ", OTP);
 
   // send that otp to our user
-  // sendMail(
-  //   res,
-  //   newUser.email,
-  //   "Email Verification",
-  //   `
-  //   <p>You verification OTP</p>
-  //   <h1>${OTP}</h1>`
-  // );
+  sendMail(
+    newUser.email,
+    "Email Verification",
+    `
+    <p>You verification OTP</p>
+    <h1>${OTP}</h1>`
+  );
 
   const newEmailVerificationToken = new EmailVerificationToken({
     owner: newUser._id,
@@ -123,12 +122,11 @@ exports.verifyEmail = async (req, res) => {
 
   await EmailVerificationToken.findByIdAndDelete(token._id);
 
-  // sendMail(
-  //   res,
-  //   user.email,
-  //   "Welcome Email",
-  //   "<h1>Welcome to our app and thanks for choosing us.</h1>"
-  // );
+  sendMail(
+    user.email,
+    "Welcome Email",
+    "<h1>Welcome to our app and thanks for choosing us.</h1>"
+  );
 
   const jwtToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
 
@@ -212,14 +210,13 @@ exports.forgetPassword = async (req, res) => {
 
   const resetPasswordUrl = `http://localhost:5173/auth/reset-password?token=${token}&id=${user._id}`;
 
-  // sendMail(
-  //   res,
-  //   user.email,
-  //   "Reset Password Link",
-  //   `
-  //   <p>Click here to reset password</p>
-  //   <a href='${resetPasswordUrl}'>Change Password</a>`
-  // );
+  sendMail(
+    user.email,
+    "Reset Password Link",
+    `
+    <p>Click here to reset password</p>
+    <a href='${resetPasswordUrl}'>Change Password</a>`
+  );
 
   console.log(resetPasswordUrl);
 
@@ -246,14 +243,13 @@ exports.resetPassword = async (req, res) => {
 
   await PasswordResetToken.findByIdAndDelete(req.resetToken._id);
 
-  // sendMail(
-  //   res,
-  //   user.email,
-  //   "Password Reset Successfully",
-  //   `
-  //   <h1>Password Reset Successfully</h1>
-  //   <p>Now you can use new password.</p>`
-  // );
+  sendMail(
+    user.email,
+    "Password Reset Successfully",
+    `
+    <h1>Password Reset Successfully</h1>
+    <p>Now you can use new password.</p>`
+  );
 
   res.json({
     message: "Password reset successfully, now you can use new password.",
@@ -268,7 +264,6 @@ exports.uploadAvatar = async (req, res) => {
 
   if (file) {
     const avatarId = user.avatar?.public_id;
-    // console.log(posterID);
     if (avatarId) {
       const { result } = await cloudinary.uploader.destroy(avatarId);
       if (result !== "ok") {

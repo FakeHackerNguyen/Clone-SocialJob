@@ -70,6 +70,7 @@ router.get("/is-auth", isAuth, (req, res) => {
       educations: user.educations,
       experiences: user.experiences,
       isVerified: user.isVerified,
+      connections: user.connections
     },
   });
 });

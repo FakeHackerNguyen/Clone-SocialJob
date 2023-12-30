@@ -340,8 +340,9 @@ function HeaderMainPage() {
           <ul className="main-page global-nav__primary-items">
             <li className="main-page global-nav__primary-item">
               <NavLink
+               to="/feed"
                 className={`main-page app-aware-link ${
-                  true && "global-nav__primary-link--active"
+                  false && "global-nav__primary-link--active"
                 } global-nav__primary-link`}
               >
                 <div className="main-page ivm-image-view-model global-nav__icon-ivm">
@@ -485,7 +486,7 @@ function HeaderMainPage() {
                 </span>
               </NavLink>
             </li> */}
-            <li className="main-page global-nav__primary-item">
+            {/* <li className="main-page global-nav__primary-item">
               <NavLink className="main-page app-aware-link  global-nav__primary-link">
                 <div className="main-page global-nav__primary-link-notif artdeco-notification-badge ember-view">
                   {" "}
@@ -532,7 +533,7 @@ function HeaderMainPage() {
                   Notifications
                 </span>
               </NavLink>
-            </li>
+            </li> */}
             <li
               className="main-page global-nav__primary-item"
               onClick={handleDropDown}

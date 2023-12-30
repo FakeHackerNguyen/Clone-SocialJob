@@ -28,6 +28,7 @@ function SingleComment({ comment, post }) {
   const [hideInputReply, setHideInputReply] = useState(true);
   const [refresh, setRefresh] = useState(false);
 
+  console.log(comment)
   const inputRef = useRef();
   const exceptionRef = useRef();
 
@@ -103,7 +104,7 @@ function SingleComment({ comment, post }) {
               <div className="main-page ivm-view-attr__img-wrapper display-flex">
                 <img
                   width="40"
-                  src={comment?.owner?.avatar}
+                  src={comment?.owner?.avatar?.url}
                   loading="lazy"
                   height="40"
                   alt=""
@@ -132,9 +133,9 @@ function SingleComment({ comment, post }) {
                 </span> */}
                 </span>
                 <span className="main-page comments-post-meta__headline t-12 t-normal t-black--light">
-                  {comment?.owner?.isStudent
-                    ? `Student at ${comment?.owner?.university}`
-                    : `${comment?.owner?.titleJob} at ${comment?.owner?.company}`}
+                  {comment?.owner?.initialEducation
+                    ? `Student at ${comment?.owner?.initialEducation?.university?.name}`
+                    : `${comment?.owner?.initialExperience?.titleJob} at ${comment?.owner?.initialExperience?.company?.name}`}
                 </span>
               </h3>
             </a>

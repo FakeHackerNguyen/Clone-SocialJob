@@ -7,9 +7,10 @@ import DateFormField from "../../components/DateFormField";
 import LiveSearch from "../../components/Search/LiveSearch";
 import { useAuth, useNotification } from "../../hooks";
 
-const validateStudentInfo = ({ titleJob, companyId }) => {
-  if (!titleJob.trim()) return { ok: false, error: "Title job is missing!" };
-  if (!companyId.trim()) return { ok: false, error: "Company is missing!" };
+const validateStudentInfo = ({ universityId,startYear, endYear }) => {
+  if (!universityId.trim()) return { ok: false, error: "University is missing!" };
+  if (!startYear.trim()) return { ok: false, error: "Start year is missing!" };
+  if (!endYear.trim()) return { ok: false, error: "End Year is missing!" };
 
   return { ok: true };
 };

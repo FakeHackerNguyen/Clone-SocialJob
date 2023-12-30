@@ -22,7 +22,6 @@ exports.sendMessage = async (req, res) => {
   newMessage = await Chat.populate(newMessage, "chat");
   newMessage = await User.populate(newMessage, {
     path: "sender",
-    select: "lastName email avatar",
   });
 
   // update latest message of chat

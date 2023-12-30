@@ -62,7 +62,7 @@ function SingleMessage({ message }) {
           </div>
         </div>
 
-        <div className="main-page msg-s-event-with-indicator display-flex msg-s-event-listitem__attachment-item--msg-fwd-enabled">
+        {/* <div className="main-page msg-s-event-with-indicator display-flex msg-s-event-listitem__attachment-item--msg-fwd-enabled">
           <div className="main-page msg-s-event__content">
             <div className="main-page msg-s-event-listitem__message-bubble msg-s-event-listitem__attachment-item">
               <div className="main-page msg-s-event-listitem__image-container">
@@ -87,7 +87,7 @@ function SingleMessage({ message }) {
             className="main-page msg-s-event-with-indicator__sending-indicator align-self-flex-end"
             title="Sending"
           ></span>
-        </div>
+        </div> */}
       </div>
     </li>
   );
