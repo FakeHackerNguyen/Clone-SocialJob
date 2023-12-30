@@ -1,0 +1,270 @@
+/* 626 */
+.main-page.profile-background-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 25%;
+  border-top-left-radius: var(--corner-radius-medium);
+  border-top-right-radius: var(--corner-radius-medium);
+  cursor: pointer;
+}
+
+/* 635 */
+.main-page.profile-background-image--default {
+  background: var(--entity-background-person) 50% / cover;
+}
+
+/* 15596 */
+.main-page.inline-show-more-text {
+  position: relative;
+}
+
+/* 15600 */
+.main-page.inline-show-more-text--is-collapsed-with-line-clamp {
+  /*! autoprefixer: off */
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0 auto;
+}
+
+/* 24029 */
+.main-page.live-video-hero-image {
+  border-top-left-radius: var(--corner-radius-medium);
+  border-top-right-radius: var(--corner-radius-medium);
+  position: relative;
+  overflow-y: hidden;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-property: max-height;
+  transition-delay: 0s;
+}
+
+.main-page.live-video-hero-image.live-video-hero-image--expanded {
+  background-color: var(--color-background-canvas-dark);
+  max-height: 440px !important;
+}
+
+.main-page.live-video-hero-image__bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+  transition-delay: 1s;
+  opacity: 1;
+}
+
+.main-page.live-video-hero-image--expanded .live-video-hero-image__bg-image {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.main-page.live-video-hero-image__live-video {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.main-page.live-video-hero-image--expanded .live-video-hero-image__live-video {
+  transition-duration: 2s;
+  transition-delay: 0.4s;
+  opacity: 1;
+}
+
+/* 25228 */
+.main-page.media-shared-tagging-typeahead__result.search-typeahead-v2__hit {
+  padding: 0 0 0 0.8rem;
+}
+
+/* 36206 */
+.main-page.presence-entity__indicator--size-9 {
+  bottom: 0;
+  right: 1.6rem;
+  box-shadow: 0 0 0 2px var(--color-background-container);
+}
+
+/* 36246 */
+.main-page.presence-indicator--size-7,
+.main-page.presence-indicator--size-8,
+.main-page.presence-indicator--size-9 {
+  width: 24px;
+  height: 24px;
+}
+
+/* 36481 */
+.main-page.pvs-profile-actions .pvs-profile-actions__action {
+  margin-right: ui-spacing(1);
+  margin-left: ui-spacing(0);
+  margin-top: ui-spacing(0);
+}
+
+/* 36487 */
+.main-page.pvs-profile-actions button.artdeco-button {
+  margin-top: ui-spacing(0);
+}
+
+/* 36559 */
+.main-page.pvs-profile-actions {
+  display: inline-flex;
+}
+
+.main-page.pvs-profile-actions .pvs-profile-actions__action {
+  margin-right: 0.8rem;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.main-page.pvs-profile-actions button.artdeco-button {
+  margin-top: 0;
+}
+
+.main-page.pvs-profile-actions__custom-action {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .main-page.pvs-profile-actions__custom-action {
+    display: inline-flex;
+    margin-right: 0.8rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.main-page.pvs-profile-actions__custom-action-scaled {
+  display: flex;
+  width: 100%;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .main-page.pvs-profile-actions__custom-action-scaled {
+    display: none;
+  }
+}
+
+.main-page.pvs-profile-actions--rtl .pvs-profile-actions__action {
+  margin-right: 0;
+  margin-left: 0.8rem;
+}
+
+/* 38281 */
+.main-page.pvs-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-one-and-a-half-x);
+  padding-bottom: 0;
+}
+
+/* 38308 */
+.main-page.pvs-header__top-container--no-stack {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 38317 */
+.main-page.pvs-header__left-container,
+.main-page.pvs-header__left-container--stack {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.main-page.pvs-header__left-container--stack {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .main-page.pvs-header__left-container--stack {
+    flex-direction: row;
+  }
+}
+
+/* 38334 */
+.main-page.pvs-header__title-container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-one-and-a-half-x) var(--spacing-one-and-a-half-x) 0;
+}
+
+.main-page.pvs-header__title {
+  color: var(--color-text);
+}
+
+/* 38405 */
+.main-page.pvs-list {
+  list-style-type: none;
+}
+
+/* 39034 */
+.main-page.pv-profile-card--ghost > .pvs-header__container {
+  min-height: 60px;
+}
+
+/* 39038 */
+.main-page.pv-profile-card__anchor {
+  position: absolute;
+  top: -108px;
+  visibility: hidden;
+}
+
+/* 43058 */
+.main-page.search-basic-typeahead .basic-typeahead__triggered-content {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: var(--color-background-container);
+  border: none;
+  border-radius: var(--corner-radius-medium);
+  box-shadow: var(--elevation-raised);
+}
+
+.main-page.search-basic-typeahead .basic-typeahead__triggered-content:empty {
+  border: none;
+}
+
+.main-page.search-basic-typeahead
+  .basic-typeahead__triggered-content
+  .basic-typeahead__typeahead-cluster-header {
+  background-color: var(--color-background-container);
+  display: flex;
+  align-items: stretch;
+  padding: 1.6rem 1.6rem 0.8rem;
+  margin: 0;
+  border-top: 1px solid var(--color-border-faint);
+}
+
+.main-page.search-basic-typeahead
+  .basic-typeahead__triggered-content
+  .basic-typeahead__typeahead-cluster-header:first-child {
+  border-top: none;
+}
+
+.main-page.search-basic-typeahead
+  .basic-typeahead__triggered-content
+  .basic-typeahead__typeahead-cluster-no-results {
+  background-color: var(--color-background-container);
+  display: flex;
+  align-items: stretch;
+  padding: 0.8rem 1.6rem 1.6rem;
+  margin: 0;
+}
+
+.main-page.search-basic-typeahead
+  .basic-typeahead__triggered-content
+  .basic-typeahead__typeahead-cluster {
+  padding-bottom: 0.8rem;
+}

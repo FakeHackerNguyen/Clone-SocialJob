@@ -1,0 +1,64 @@
+/* 59 */
+.main-page.job-posting-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid var(--color-border-faint);
+  padding: 1.6rem 2.4rem;
+}
+
+.main-page.job-posting-footer__secondary-cta {
+  margin-right: 0.8rem;
+}
+
+/* 142 */
+.main-page.job-posting-wow {
+  background-color: var(--color-background-brand-accent-4-dark);
+  padding: 2.4rem 0;
+}
+
+/* 151 */
+.main-page.job-posting-wow__form {
+  max-width: 384px;
+  padding-bottom: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-page.job-posting-wow__form--loading {
+  height: 650px;
+}
+
+/* 211 */
+.main-page.job-posting-wow__ai-jd-draft-btn {
+  margin-top: 2.4rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* 1554 */
+.main-page.job-posting-header {
+  border-bottom: 1px solid var(--color-border-faint);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-page.job-posting-form-container__segments-section--visible {
+    max-height: 100%;
+  }
+
+  .main-page.job-posting-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* 1577 */
+.main-page.job-posting-header__title {
+  flex: 1;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}

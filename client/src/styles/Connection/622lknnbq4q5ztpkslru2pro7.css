@@ -1,0 +1,148 @@
+/* 66 */
+.main-page.invitation-card {
+  display: flex;
+  align-items: inherit;
+  flex-direction: column;
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  transition: visibility 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+/* 76 */
+.main-page.invitation-card--new-invite {
+  background-color: var(--color-background-new);
+}
+
+/* 90 */
+.main-page.invitation-card__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .main-page.invitation-card__container {
+    flex-direction: row;
+  }
+}
+
+/* 101 */
+.main-page.invitation-card__picture {
+  flex-shrink: 0;
+  padding-right: 0.8rem;
+  font-size: 0;
+}
+
+/* 107 */
+.main-page.invitation-card--new-invite .invitation-card__picture {
+  background-color: transparent;
+}
+
+/* 150 */
+.main-page.invitation-card__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page.invitation-card:last-child .invitation-card__details {
+  border-bottom: none;
+}
+
+/* 204 */
+.main-page.invitation-card__tvm-title {
+  display: block;
+  line-height: 2.4rem !important;
+  max-height: 4.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  width: 100%;
+}
+
+.main-page.invitation-card__tvm-title * {
+  line-height: inherit !important;
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .main-page.invitation-card__tvm-title {
+    /*! autoprefixer: off */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+.main-page.invitation-card__tvm-title a {
+  font-size: var(--font-size-medium);
+  color: var(--color-text);
+}
+
+.main-page.invitation-card__tvm-title > li-icon {
+  margin-left: 2px;
+}
+
+/* 236 */
+.main-page.invitation-card__subtitle {
+  display: block;
+  line-height: 2rem !important;
+  max-height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  width: 100%;
+  flex: 1;
+}
+
+.main-page.invitation-card__subtitle * {
+  line-height: inherit !important;
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .main-page.invitation-card__subtitle {
+    /*! autoprefixer: off */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
+
+/* 283 */
+.main-page.invitation-card__action-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0.8rem;
+  margin-left: 68px;
+}
+
+@media screen and (min-width: 992px) {
+  .main-page.invitation-card__action-container {
+    padding-top: 0;
+    margin-left: 0;
+  }
+}
+
+/* 297 */
+.main-page.invitation-card__custom-message-container {
+  margin: 0 0.8rem 0.4rem 88px;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--color-border-faint);
+  border-radius: 0.8rem;
+}
+
+/* 304 */
+.main-page.invitation-card__custom-message {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  max-width: 346px;
+  float: left;
+}
+
+/* 315 */
+.main-page.mn-two-column-layout .invitation-card__custom-message {
+  max-width: 600px;
+}
+
+/* 353 */
+.main-page.invitation-card__custom-message-line-cta {
+  margin-left: -0.8rem;
+}

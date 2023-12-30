@@ -1,0 +1,50 @@
+.main-page.editor-content,
+.main-page.editor-content p {
+  font-size: inherit;
+}
+
+.main-page.editor-typeahead-fetch {
+  position: absolute;
+  width: 100%;
+}
+
+.main-page.editor-content {
+  font-family: inherit;
+}
+
+.main-page.editor-content .ql-mention {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.main-page.editor-ghost-text-cta__button,
+.main-page.editor-ghost-text-cta__placeholder {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.main-page.editor-content .ql-mention:hover {
+  text-decoration: none;
+}
+
+.main-page.editor-content .ql-mention:visited {
+  color: var(--color-text);
+}
+
+@media (-ms-high-contrast: active), (forced-colors: active) {
+  .main-page.editor-content .ql-mention {
+    color: WindowText !important;
+  }
+}
+
+.main-page.editor-content .ql-hashtag {
+  word-wrap: normal;
+}
+
+.main-page.editor-content__placeholder--hidden .ql-blank::before {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

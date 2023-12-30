@@ -1,0 +1,153 @@
+/* 6 */
+.main-page.feed-identity-module__anchored-widget,
+.main-page.feed-lms-consent-form--modal .feed-lms-consent-form__actions {
+  border-top: 1px solid var(--color-border-faint);
+}
+
+.main-page.feed-identity-module__anchored-widget:focus,
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item
+  a:focus {
+  outline-offset: -1px;
+}
+
+/* 11 */
+.main-page.feed-identity-module__anchored-widget:focus,
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item
+  a:focus {
+  outline-offset: -1px;
+}
+
+/* 111 */
+.main-page.feed-identity-module__actor-meta .ghost-person,
+.main-page.feed-lms-consent-modal {
+  background-color: var(--color-background-container-tint);
+}
+
+/* 240 */
+.main-page.feed-index-sort-border {
+  background-color: var(--color-border-faint);
+}
+
+/* 423 */
+.main-page.feed-identity-module {
+  padding: 0;
+  text-align: center;
+}
+
+/* 428 */
+.main-page.feed-identity-module__anchored-widget {
+  display: block;
+}
+
+.main-page.feed-identity-module__anchored-widget:hover {
+  background-color: var(--color-background-none-tint-hover);
+}
+
+.main-page.feed-identity-module__anchored-widget:active {
+  background-color: var(--color-background-none-active);
+}
+
+/* 470 */
+.main-page.feed-identity-module__action,
+.main-page.feed-identity-module__action:hover,
+.main-page.feed-identity-module__action:visited,
+.main-page.feed-identity-module__action:visited:hover,
+.main-page.feed-identity-widget-item__stat,
+.main-page.feed-lms-consent-modal__illustration-header {
+  color: var(--color-action);
+}
+
+/* 479 */
+.main-page.feed-identity-module__actor-meta {
+  padding: 1.2rem 1.2rem 1.6rem;
+}
+
+/* 483 */
+.main-page.feed-identity-module__actor-meta .ghost-person {
+  background-image: var(--illustration-microspot-camera-small);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+/* 490 */
+.main-page.feed-identity-module__default-bg {
+  background-image: var(--entity-background-person);
+  background-position: center;
+  background-size: 462px;
+}
+
+.main-page.feed-identity-module__member-bg-image {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 56.25px;
+  margin: -1.2rem -1.2rem 0;
+}
+
+/* 503 */
+.main-page.feed-identity-module__member-photo {
+  margin: -38px auto 1.2rem;
+  border: 2px solid var(--color-background-container);
+  background-color: var(--color-background-container);
+}
+
+/* 510 */
+.main-page.feed-identity-module__widgets {
+  border-top: 1px solid var(--color-border-faint);
+}
+
+/* 554 */
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item {
+  padding: 0;
+}
+
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item
+  a {
+  display: block;
+  padding: 0.4rem 1.2rem;
+}
+
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item
+  a:hover {
+  background-color: var(--color-background-none-tint-hover);
+  text-decoration: none;
+}
+
+.main-page.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item.feed-identity-module__entity-list-item.entity-list-item
+  a:active {
+  background-color: var(--color-background-none-active);
+}
+
+/* 575 */
+.main-page.feed-identity-widget-item__icon-stat {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .main-page.feed-identity-widget-item__icon-stat {
+    text-align: right;
+  }
+}
+
+/* 629 */
+.main-page.profile-rail-card__premium-bar {
+  height: 4px;
+  width: 100%;
+}
+
+/* 634 */
+.main-page.profile-rail-card__member-bg-image {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 54px;
+  margin: -1.2rem -1.2rem 0;
+}
+
+/* 656 */
+.main-page.profile-rail-card__member-photo {
+  margin: -38px auto 1.2rem;
+  border: 2px solid var(--color-background-container);
+  background-color: var(--color-background-container);
+}

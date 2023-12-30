@@ -1,0 +1,42 @@
+/* 196 */
+.jxEelZVwcOlksjsEesfvhmNiBilnCfFvng,
+.main-page.pv-profile-sticky-header-v2__mini-profile-container {
+  max-width: 792px;
+  min-width: 312px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 204 */
+.HhmQztojJCecjsxFAiTiBvXBRPehEJhuUnM,
+.main-page.pv-profile-sticky-header-v2__container {
+  max-width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 213 */
+.main-page.pv-profile-sticky-header-v2__actions-container {
+  display: flex;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* 219 */
+.main-page.pv-profile .scaffold-layout-toolbar {
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-page.pv-profile .scaffold-layout-toolbar {
+    display: none;
+  }
+}
+
+/* 936 */
+.main-page.pv-profile-body-wrapper {
+  position: relative;
+  z-index: 0;
+}

@@ -1,0 +1,28 @@
+/* 92 */
+.main-page.workflow__left-rail {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .main-page.workflow__left-rail {
+    padding-left: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* 103 */
+.main-page.workflow-results-container {
+  overflow: visible;
+  z-index: 1;
+}
+
+/* 108 */
+.main-page.workflow-results-container .entity-result__content-inner-container {
+  padding: 0;
+}
+
+/* 306 */
+.main-page.entity-result__embedded-object-image {
+  height: 80px;
+  width: 80px;
+}

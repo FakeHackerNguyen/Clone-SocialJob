@@ -1,0 +1,268 @@
+/* 32 */
+.location-sign-up.onboarding-input.onboarding-input,
+.location-sign-up.onboarding-input.onboarding-input:active,
+.location-sign-up.onboarding-input.onboarding-input:focus,
+.location-sign-up.onboarding-input.onboarding-input:hover {
+  border: 1px solid transparent !important;
+}
+
+/* 92 */
+.location-sign-up.onboarding-input.onboarding-input {
+  box-sizing: border-box;
+  color: var(--color-text) !important;
+}
+
+/* 203 */
+.location-sign-up.onboarding-profile-edu__over-16 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+/* 225 */
+.location-sign-up.onboarding-profile-form-field {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* 235 */
+.location-sign-up.onboarding-profile-form-field__label--required::after {
+  color: var(--color-brand);
+  content: "\2A";
+}
+
+/* 258 */
+.location-sign-up.onboarding-profile-typeahead__input {
+  box-sizing: border-box;
+}
+
+/* 269 */
+.location-sign-up.onboarding-gdpr-message__icon {
+  color: var(--color-icon);
+}
+
+/* 641 */
+.location-sign-up.onboarding-page {
+  max-width: 600px;
+}
+
+/* 649 */
+.location-sign-up.onboarding-page--h-center {
+  margin: 0 auto;
+}
+
+/* 665 */
+.location-sign-up.onboarding-page__header {
+  margin: var(--spacing-three-x) auto;
+  padding: 0 var(--spacing-one-x);
+  max-width: 600px;
+}
+
+/* 671 */
+.location-sign-up.onboarding-page__subheader {
+  margin: var(--spacing-one-x) auto 0;
+  font-size: var(--font-size-medium);
+  color: var(--color-text-low-emphasis);
+  --artdeco-reset-typography_getLineHeight: 1.5;
+  line-height: var(--artdeco-reset-typography_getLineHeight);
+  overflow-wrap: break-word;
+  max-width: 600px;
+}
+
+/* 958 */
+.location-sign-up.onboarding-main,
+.location-sign-up.onboarding-widget {
+  background: var(--color-background-container);
+}
+
+/* 967 */
+.location-sign-up.onboarding-main {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.location-sign-up.onboarding-main .scaffold-layout--reflow .neptune-grid {
+  width: auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .location-sign-up.onboarding-main .scaffold-layout--reflow .neptune-grid {
+    width: 1128px;
+    padding: 0 3.2rem;
+  }
+}
+
+/* 988 */
+.location-sign-up.onboarding-main__nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 52px;
+  z-index: 3;
+  background-color: var(--color-background-container);
+  padding: 0.8rem;
+  max-width: 1128px;
+}
+
+.location-sign-up.onboarding-main__nav .onboarding-main__nav-logo {
+  color: var(--color-brand);
+  margin-top: 1.2rem;
+}
+
+/* 1004 */
+.location-sign-up.onboarding-widget__single-card-container {
+  box-sizing: border-box;
+  min-width: 408px;
+  max-width: 408px;
+}
+
+/* 1010 */
+.location-sign-up.scaffold-layout--reflow
+  .onboarding-widget__single-card-container {
+  min-width: 100%;
+  padding: 0 var(--spacing-two-x);
+}
+
+/* 1073 */
+@media screen and (min-width: 768px) {
+  .location-sign-up.scaffold-layout--reflow
+    .onboarding-widget__single-card-container {
+    padding: 0;
+    min-width: 408px;
+  }
+
+  .location-sign-up.scaffold-layout--reflow .onboarding-card__person-name {
+    /*! autoprefixer: off */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 0;
+  }
+}
+
+/* 1401 */
+.location-sign-up.onboarding-profile-edu__form-field-container {
+  display: flex;
+}
+
+/* 1405 */
+.location-sign-up.onboarding-profile-edu__school-years-form-field {
+  flex-basis: 50%;
+  min-width: 0;
+}
+
+/* 1410 */
+.location-sign-up.onboarding-profile-edu__accordion--is-expanded {
+  transition-property: max-height;
+  max-height: 200px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 1422 */
+.location-sign-up.onboarding-profile-edu__over-16 {
+  border-radius: var(--corner-radius-medium);
+  border: 1px solid var(--color-border-low-emphasis);
+  padding: 1.6rem 2.4rem;
+  margin-top: 1.6rem;
+}
+
+/* 1621 */
+.location-sign-up.onboarding-header {
+  padding-bottom: 1.6rem;
+  width: 600px;
+}
+
+.location-sign-up.scaffold-layout--reflow .onboarding-header {
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .location-sign-up.scaffold-layout--reflow
+    .onboarding-people-typeahead__result-info {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .location-sign-up.scaffold-layout--reflow .onboarding-header {
+    width: 600px;
+  }
+}
+
+/* 1645 */
+.location-sign-up.onboarding-header__subtitle {
+  font-size: var(--font-size-medium);
+  color: var(--color-text-low-emphasis);
+  --artdeco-reset-typography_getLineHeight: 1.5;
+  line-height: var(--artdeco-reset-typography_getLineHeight);
+  overflow-wrap: break-word;
+}
+
+/* 2843 */
+.location-sign-up.onboarding-email-confirmation {
+  box-sizing: border-box;
+}
+
+/* 2851 */
+.location-sign-up.onboarding-email-confirmation__main {
+  width: 432px;
+}
+
+.location-sign-up.scaffold-layout--reflow .onboarding-email-confirmation__main {
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .location-sign-up.scaffold-layout--reflow
+    .onboarding-email-confirmation__main {
+    width: 432px;
+  }
+}
+
+/* 2905 */
+.location-sign-up.onboarding-header__subtitle-edit-btn {
+  padding: 0 0.8rem;
+  color: var(--color-text-low-emphasis);
+}
+
+.location-sign-up.onboarding-header__subtitle-edit-btn:hover {
+  background-color: var(--color-background-none-tint-hover);
+  color: var(--color-text-low-emphasis-shift);
+  border-radius: var(--corner-radius-small);
+}
+
+/* 2933 */
+.location-sign-up.onboarding-email-confirmation__code-input {
+  letter-spacing: 3px;
+  appearance: textfield;
+}
+
+.location-sign-up.onboarding-email-confirmation__code-input::-webkit-inner-spin-button,
+.location-sign-up.onboarding-email-confirmation__code-input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.location-sign-up.onboarding-email-confirmation__code-input[type="number"] {
+  font-size: var(--font-size-xlarge);
+  color: var(--color-text);
+  height: auto;
+  padding: 5px;
+}
+
+.location-sign-up.onboarding-email-confirmation__code-sent {
+  color: var(--color-signal-positive);
+}
+
+.location-sign-up.onboarding-email-confirmation__code-invalid {
+  color: var(--color-signal-negative);
+  text-align: left;
+  margin: 1.2rem 0 2.4rem;
+}
